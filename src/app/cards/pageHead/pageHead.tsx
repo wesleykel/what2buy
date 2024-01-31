@@ -2,8 +2,8 @@
 import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
-
-//import instaLogo from "./instagram.svg";
+import logo from "./julia_logo_transparent.png";
+import instaLogo from "./instagram.svg";
 const Title = styled.div`
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@ const PageHead = () => {
               "https://www.instagram.com/jn__clay?igsh=NHRpZnBhcDdqdmwx&utm_source=qr"
             }
           >
-            <Image src={""} alt="instagram logo" width={30} />
+            <Image src={instaLogo} alt="instagram logo" width={30} />
           </Link>
         </div>
       </Container>
