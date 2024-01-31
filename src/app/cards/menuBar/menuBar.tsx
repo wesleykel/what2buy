@@ -1,6 +1,7 @@
 "use client";
 import styled from "styled-components";
 import Link from "next/link";
+
 const Menu = styled.div`
   display: flex;
   flex-direction: row;
@@ -15,14 +16,25 @@ const Menu = styled.div`
   color: rgb(255, 244, 244);
 `;
 const Button = styled.button``;
+
 const MenuBar = () => {
   return (
     <Menu>
-      <Link href={""}>Gallery</Link>
-      <Button type="button" onClick={() => (location.hash = "#about")}>
+      <Link
+        href={"#gallery"}
+        style={{ textDecoration: "none", color: "white" }}
+      >
+        Gallery
+      </Link>
+      <Link href={"#about"} style={{ textDecoration: "none", color: "white" }}>
         About
-      </Button>
-      <Link href={""}>Contact</Link>
+      </Link>
+      <Link
+        href={"#contact"}
+        style={{ textDecoration: "none", color: "white" }}
+      >
+        Contact
+      </Link>
     </Menu>
   );
 };
