@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "./julia_logo_transparent.png";
+//import logo from "./julia_logo_transparent.png";
 import instaLogo from "./instagram.svg";
 const Title = styled.div`
   display: flex;
